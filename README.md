@@ -44,7 +44,7 @@ This is a simple and clean Flutter application that fetches and displays news ar
 
 ```bash
 git clone https://github.com/Kezia-debug/flutter-news-app.git
-cd flutter-news-app
+cd flutter-news-app ```
 
 ---
 
