@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/news_article.dart';
+import 'package:intl/intl.dart';
 
 class NewsTile extends StatelessWidget {
   final NewsArticle article;
@@ -59,7 +60,7 @@ class NewsTile extends StatelessWidget {
             ),
           ),
 
-          // ✅ Text Content
+          // ✅ Text Content with Title, Date, and Description
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(12.0),
@@ -76,10 +77,20 @@ class NewsTile extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 6),
+                  Text(
+                    article.publishedAt != null
+                        ? DateFormat.yMMMd().format(article.publishedAt!)
+                        : 'No Date',
+                    style: const TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
                   Expanded(
                     child: Text(
                       article.description,
-                      maxLines: 3,
+                      maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
                         fontSize: 14,
