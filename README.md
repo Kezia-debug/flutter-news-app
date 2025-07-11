@@ -36,6 +36,8 @@ This is a simple and clean Flutter application that fetches and displays news ar
 - Flutter SDK installed
 - NewsAPI API key from https://newsapi.org
 
+---
+
 ### 🔨 How to Run
 
 1. Clone the repository:
@@ -43,3 +45,33 @@ This is a simple and clean Flutter application that fetches and displays news ar
 ```bash
 git clone https://github.com/Kezia-debug/flutter-news-app.git
 cd flutter-news-app
+
+---
+
+## 📱 Screenshots
+
+### 🏠 Home Screen
+(screenshots/home.png)
+
+### 📄 Detail Screen
+(screenshots/detail.png)
+
+---
+
+## 🗂️ Folder Structure
+
+```bash
+lib/
+├── models/
+│   └── news_article.dart
+├── screens/
+│   ├── home_screen.dart
+│   └── news_detail_screen.dart
+├── services/
+│   └── news_service.dart
+├── widgets/
+│   ├── news_tile.dart
+│   └── search_bar.dart
+└── main.dart
+
+---
