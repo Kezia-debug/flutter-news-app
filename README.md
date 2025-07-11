@@ -1,16 +1,45 @@
-# news_app
+# 📰 Flutter News App
 
-A new Flutter project.
+This is a simple and clean Flutter application that fetches and displays news articles using the [NewsAPI.org](https://newsapi.org) public API.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+- Fetches top headlines from NewsAPI.
+- Scrollable list of news articles.
+- Each article shows:
+  - 🖼️ Image (with fallback)
+  - 🧾 Title
+  - 🕒 Published Date
+  - 📜 Short Description
+- Search bar to filter articles by keywords.
+- Tap any article to view full details and external link.
+- Loading spinner and error messages included.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🔧 Technologies Used
+
+- **Flutter**
+- **HTTP package** for API calls
+- **Intl package** for date formatting
+- **State Management:** setState (no external library)
+- **NewsAPI.org** for data source
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Flutter SDK installed
+- NewsAPI API key from https://newsapi.org
+
+### 🔨 How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Kezia-debug/flutter-news-app.git
+cd flutter-news-app
